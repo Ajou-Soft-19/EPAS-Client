@@ -7,7 +7,7 @@
 #include <SoftwareSerial.h>
 #include <LiquidCrystal_I2C.h>
 #include <DFRobotDFPlayerMini.h>
-#include "mp3tf16p.h"
+
 #define LED_PIN D4
 
 ESP8266WiFiMulti WiFiMulti;
@@ -18,7 +18,6 @@ DFRobotDFPlayerMini myDFPlayer;
 SoftwareSerial ss(D2, D1);
 SoftwareSerial gps_serial(D6, D5);
 SoftwareSerial speaker_serial(D3, D7);
-MP3Player mp3(D7, D3);
 LiquidCrystal_I2C lcdMonitor(0x27, 16, 2); 
 
 const char* host = "ajou-epas.xyz";
@@ -241,7 +240,7 @@ void loop() {
   
   extractGpsData();
   displayGpsData();
-  printGpsVariables();
+  //printGpsVariables();
   sendUpdateMessage(longitude, latitude, false, speed / 3.6, course, timestamp);
   displayVehicleInfo();
   findNotAlertedEmergencyVehicle();
