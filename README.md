@@ -10,7 +10,6 @@ EPAS 클라이언트 디바이스는 큰 컴퓨팅 파워가 필요하지 않으
 | <img src="https://github.com/Ajou-Soft-19/EPAS-Embeded-Client/assets/32717522/db2253ca-8453-4697-8732-e4e98be4027a" alt="EPAS" style="display: block; margin-left: auto; margin-right: auto;" /> | <img src="https://github.com/Ajou-Soft-19/EPAS-Embeded-Client/assets/32717522/06179948-e7e7-4f62-894e-7a36c9a6e1fe" alt="Additional Information" style="display: block; margin-left: auto; margin-right: auto;" /> |
 
 위 사진은 개발된 EPAS 클라이언트 디바이스의 프로토타입 사진입니다. 이 디바이스에 사용된 하드웨어는 아래와 같습니다.
-물론입니다. 아래는 EPAS 클라이언트 디바이스 프로토타입에 사용된 하드웨어 목록을 표 형식으로 정리한 것입니다. 실제 하드웨어 목록과 가격은 예시이므로, 실제 구매 시 시장 가격을 확인해야 합니다.
 
 | 번호 | 이름             | 수량 | 가격 (USD) |
 |------|-----------------|------|------------|
