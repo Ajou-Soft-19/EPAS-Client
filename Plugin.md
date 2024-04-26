@@ -38,19 +38,36 @@ wss://ajou-epas.xyz:7002
 {
   "requestType": "UPDATE",
   "data": {
-    "longitude": longitude,
-    "latitude": latitude,
-    "isUsingNavi": isUsingNavi,
-    "meterPerSec": meterPerSec,
-    "direction": direction,
-    "timestamp": timestamp
+    "longitude": 'longitude',
+    "latitude": 'latitude',
+    "isUsingNavi": 'isUsingNavi',
+    "meterPerSec": 'meterPerSec',
+    "direction": 'direction',
+    "timestamp": 'timestamp'
   }
 }
 ```
 
+각 필드의 설명과 타입은 다음과 같습니다.
+| 필드 | 설명 | 타입 |
+|---|---|---|
+| longitude | 사용자의 경도 | double |
+| latitude | 사용자의 위도 | double |
+| isUsingNavi | 사용자가 네비게이션을 사용하고 있는지 여부 | boolean |
+| meterPerSec | 사용자의 속도 | double |
+| direction | 사용자의 이동 방향 | double |
+| timestamp | 메시지를 전송한 시간 | ISO 8601 String |
+
+
 위의 메시지에서 `longitude`와 `latitude`는 사용자의 위치 정보를 나타내며, `isUsingNavi`는 사용자가 네비게이션을 사용하고 있는지 여부를 나타냅니다. `meterPerSec`는 사용자의 속도를 나타내며, `direction`은 사용자의 이동 방향을 나타냅니다. `timestamp`는 메시지를 전송한 시간을 나타냅니다.
 
 네비게이션을 사용하고 있을 경우 어플리케이션이 경로를 확인하고 응급차량 정보를 처리할 수 있도록 더 넓은 범위의 응급차량 정보를 제공합니다.
+
+서버는 사용자의 위치 정보를 통해 사용자가 어떤 도로에 위치하고 있는지 파악하고, 맵 매칭을 시도합니다. 이후 맵 매칭된 결과를 사용자에게 반환해줍니다.
+
+```json
+맵 매칭 결과 쓰기
+```
 
 ### 4. EPAS 서버로부터 응급차량 정보 수신
 
@@ -121,4 +138,5 @@ wss://ajou-epas.xyz:7002
 
 ### 5. EPAS 서버 연결 종료
 
-EPAS 서버는 사용자가 오랫동안 UPDATE 메시지를 보내지 않을 경우 자동으로 연결을 종료합니다. 만약 사용자가 연결을 종료하고 싶다면 별다른 메시지를 보낼 필요 없이 소켓 통신을 종료하면 됩니다. 
+EPAS 서버는 사용자가 오랫동안 UPDATE 메시지를 보내지 않을 경우 자동으로 연결을 종료합니다. 만약 사용자가 연결을 종료하고 싶다면 별다른 메시지를 보낼 필요 없이 소켓 통신을 종료하면 됩니다.
+
