@@ -348,7 +348,6 @@ POST https://ajou-epas.xyz:7001/api/vehicles
 {
     "requestType": "UPDATE",
     "data": {
-        "vehicleId": 3,
         "longitude": 127.118621,
         "latitude": 37.379899,
         "isUsingNavi": true,
@@ -520,7 +519,6 @@ navigationPathId는 최단 경로 조회에서 받은 naviPathId입니다. vehic
 {
     "requestType": "UPDATE",
     "data": {
-        "vehicleId": 3,
         "longitude": 127.118621,
         "latitude": 37.379899,
         "isUsingNavi": true,
