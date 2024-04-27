@@ -42,6 +42,7 @@ void connectWifi()
   Serial.println("[WIFI] Connecting WiFi...");
 
   WiFiMulti.addAP("Bandall2.4G", "sunf6678");
+  WiFiMulti.addAP("Bandall", "bandall77!");
 
   while (WiFiMulti.run() != WL_CONNECTED)
   {
@@ -265,7 +266,7 @@ void loop()
   {
     return;
   }
-
+ 
   extractGpsData();
   displayGpsData();
   printGpsVariables();
