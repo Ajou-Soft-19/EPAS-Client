@@ -44,11 +44,11 @@ wss://ajou-epas.xyz:7002/ws/my-location
 
 ```json
 {
-    "code": 200,
-    "messageType": "RESPONSE",
-    "data": {
-        "vehicleStatusId": "e6ba5180-7612-bc53-e98e-8ae2fee7a7e3"
-    }
+  "code": 200,
+  "messageType": "RESPONSE",
+  "data": {
+    "vehicleStatusId": "e6ba5180-7612-bc53-e98e-8ae2fee7a7e3"
+  }
 }
 ```
 
@@ -60,15 +60,15 @@ vehicleStatusId는 익명 사용자를 식별하기 위한 임시 고유 식별 
 
 ```json
 {
-    "requestType": "UPDATE",
-    "data": {
-        "longitude": 126.027956,
-        "latitude": 36.497979,
-        "isUsingNavi": false,
-        "meterPerSec": 15.6,
-        "direction": 1.3,
-        "timestamp": "2024-01-13T12:34:56.789Z"
-    }
+  "requestType": "UPDATE",
+  "data": {
+    "longitude": 126.027956,
+    "latitude": 36.497979,
+    "isUsingNavi": false,
+    "meterPerSec": 15.6,
+    "direction": 1.3,
+    "timestamp": "2024-01-13T12:34:56.789Z"
+  }
 }
 ```
 
@@ -90,15 +90,15 @@ vehicleStatusId는 익명 사용자를 식별하기 위한 임시 고유 식별 
 
 ```json
 {
-    "requestType": "UPDATE",
-    "data": {
-        "longitude": 126.027956,
-        "latitude": 36.497979,
-        "isUsingNavi": false,
-        "meterPerSec": 15.6,
-        "direction": 1.3,
-        "timestamp": "2024-01-13T12:34:56.789Z"
-    }
+  "requestType": "UPDATE",
+  "data": {
+    "longitude": 126.027956,
+    "latitude": 36.497979,
+    "isUsingNavi": false,
+    "meterPerSec": 15.6,
+    "direction": 1.3,
+    "timestamp": "2024-01-13T12:34:56.789Z"
+  }
 }
 ```
 
@@ -108,18 +108,18 @@ vehicleStatusId는 익명 사용자를 식별하기 위한 임시 고유 식별 
 
 ```json
 {
-    "code": 200,
-    "messageType": "RESPONSE",
-    "data": {
-        "location": {
-            "latitude": 36.497979,
-            "longitude": 126.027956,
-            "direction": 1.3,
-            "timestamp": "2024-01-13T12:34:56.789",
-            "locationName": "정자일로",
-            "confidence": 0.9464
-        }
+  "code": 200,
+  "messageType": "RESPONSE",
+  "data": {
+    "location": {
+      "latitude": 36.497979,
+      "longitude": 126.027956,
+      "direction": 1.3,
+      "timestamp": "2024-01-13T12:34:56.789",
+      "locationName": "정자일로",
+      "confidence": 0.9464
     }
+  }
 }
 ```
 
@@ -231,16 +231,16 @@ Access Token을 발급받기 위해서는 다음과 같은 요청을 보냅니�
 
 ```json
 {
-    "httpStatus": "OK",
-    "code": 200,
-    "data": {
-        "accessToken": "[access token]",
-        "refreshToken": "[refresh token]",
-        "accessTokenExpireTime": "2024-05-01T18:28:42.748+00:00",
-        "refreshTokenExpireTime": "2024-05-27T14:28:42.748+00:00",
-        "ownerEmail": "your email",
-        "tokenId": "0e8ac328-0203-4e2b-a432-e43ff63361be"
-    }
+  "httpStatus": "OK",
+  "code": 200,
+  "data": {
+    "accessToken": "[access token]",
+    "refreshToken": "[refresh token]",
+    "accessTokenExpireTime": "2024-05-01T18:28:42.748+00:00",
+    "refreshTokenExpireTime": "2024-05-27T14:28:42.748+00:00",
+    "ownerEmail": "your email",
+    "tokenId": "0e8ac328-0203-4e2b-a432-e43ff63361be"
+  }
 }
 ```
 
@@ -254,8 +254,8 @@ POST https://ajou-epas.xyz:7000/api/account/refresh
 
 ```json
 {
-    "accessToken": "[access token]",
-    "refreshToken": "[refresh token]",
+  "accessToken": "[access token]",
+  "refreshToken": "[refresh token]"
 }
 ```
 
@@ -290,11 +290,11 @@ Authorization: Bearer [access token]
 
 ```json
 {
-    "code": 200,
-    "messageType": "RESPONSE",
-    "data": {
-        "vehicleStatusId": "e6ba5180-7612-bc53-e98e-8ae2fee7a7e3"
-    }
+  "code": 200,
+  "messageType": "RESPONSE",
+  "data": {
+    "vehicleStatusId": "e6ba5180-7612-bc53-e98e-8ae2fee7a7e3"
+  }
 }
 ```
 
@@ -310,15 +310,15 @@ GET https://ajou-epas.xyz:7001/api/vehicles/all
 
 ```json
 {
-    "httpStatus": "OK",
-    "code": 200,
-    "data": [
-        {
-            "vehicleId": 3,
-            "licenceNumber": "123가7899",
-            "vehicleType": "MEDIUM_CAR"
-        }
-    ]
+  "httpStatus": "OK",
+  "code": 200,
+  "data": [
+    {
+      "vehicleId": 3,
+      "licenceNumber": "123가7899",
+      "vehicleType": "MEDIUM_CAR"
+    }
+  ]
 }
 ```
 
@@ -334,9 +334,9 @@ POST https://ajou-epas.xyz:7001/api/vehicles
 
 ```json
 {
-    "countryCode": "ko-KR",
-    "licenceNumber": "123가7808",
-    "vehicleType": "MEDIUM_CAR"
+  "countryCode": "ko-KR",
+  "licenceNumber": "123가7808",
+  "vehicleType": "MEDIUM_CAR"
 }
 ```
 
@@ -346,18 +346,18 @@ POST https://ajou-epas.xyz:7001/api/vehicles
 
 ```json
 {
-    "requestType": "UPDATE",
-    "data": {
-        "longitude": 127.118621,
-        "latitude": 37.379899,
-        "isUsingNavi": true,
-        "meterPerSec": 15.6,
-        "direction": 1.3,
-        "timestamp": "2024-01-13T12:34:56.789Z",
-        "onEmergencyEvent": false,
-        "naviPathId": null,
-        "emergencyEventId": null
-    }
+  "requestType": "UPDATE",
+  "data": {
+    "longitude": 127.118621,
+    "latitude": 37.379899,
+    "isUsingNavi": true,
+    "meterPerSec": 15.6,
+    "direction": 1.3,
+    "timestamp": "2024-01-13T12:34:56.789Z",
+    "onEmergencyEvent": false,
+    "naviPathId": null,
+    "emergencyEventId": null
+  }
 }
 ```
 
@@ -369,7 +369,7 @@ vehicleId는 EPAS 서버에 등록된 응급차량의 ID입니다. `longitude`�
 
 응급 상황이 발생하면 API로 요청을 보내 응급 상황을 등록할 수 있습니다. 이때 과정은 아래와 같습니다.
 
-1. 목적지까지의 최단 경로 조회
+1. 목적지까지의 최단 시간 경로 조회
 2. 응급 상황 등록
 3. 소켓을 통해 현재 위치 업데이트
 
@@ -379,11 +379,11 @@ vehicleId는 EPAS 서버에 등록된 응급차량의 ID입니다. `longitude`�
 Authorization: Bearer [access token]
 ```
 
-**1. 목적지까지의 최단 경로 조회**
+**1. 목적지까지의 최단 시간 경로 조회**
 
-응급 상황이 발생하면 응급차량 운전자는 목적지까지의 최단 경로를 조회해야 합니다. 이때 다음과 같은 요청을 보냅니다.
+응급 상황이 발생하면 응급차량 운전자는 목적지까지의 최단 시간 경로를 조회해야 합니다. 이때 다음과 같은 요청을 보냅니다.
 
-**최단 경로 조회 주소**
+**최단 시간 경로 조회 주소**
 
 ```
 POST https://ajou-epas.xyz:7001/api/emergency/navi/route
@@ -393,11 +393,11 @@ POST https://ajou-epas.xyz:7001/api/emergency/navi/route
 
 ```json
 {
-    "source": "127.116104,37.35866",
-    "dest": "127.115186,37.346427",
-    "options": "",
-    "provider": "OSRM",
-    "vehicleId": 3
+  "source": "127.116104,37.35866",
+  "dest": "127.115186,37.346427",
+  "options": "",
+  "provider": "OSRM",
+  "vehicleId": 3
 }
 ```
 
@@ -484,8 +484,8 @@ POST https://ajou-epas.xyz:7001/api/emergency/event/register
 
 ```json
 {
-    "navigationPathId": 722,
-    "vehicleId": 3
+  "navigationPathId": 722,
+  "vehicleId": 3
 }
 ```
 
@@ -495,17 +495,17 @@ navigationPathId는 최단 경로 조회에서 받은 naviPathId입니다. vehic
 
 ```json
 {
-    "httpStatus": "OK",
-    "code": 200,
-    "data": {
-        "emergencyEventId": 699,
-        "navigationPathId": 722,
-        "issuerEmail": "jsm5315@gmail.com",
-        "isActive": true,
-        "createdDate": "2024-01-13T12:34:56.789Z",
-        "endedDate": null,
-        "warnRecordDtos": []
-    }
+  "httpStatus": "OK",
+  "code": 200,
+  "data": {
+    "emergencyEventId": 699,
+    "navigationPathId": 722,
+    "issuerEmail": "jsm5315@gmail.com",
+    "isActive": true,
+    "createdDate": "2024-01-13T12:34:56.789Z",
+    "endedDate": null,
+    "warnRecordDtos": []
+  }
 }
 ```
 
@@ -517,18 +517,18 @@ navigationPathId는 최단 경로 조회에서 받은 naviPathId입니다. vehic
 
 ```json
 {
-    "requestType": "UPDATE",
-    "data": {
-        "longitude": 127.118621,
-        "latitude": 37.379899,
-        "isUsingNavi": true,
-        "meterPerSec": 15.6,
-        "direction": 1.3,
-        "timestamp": "2024-01-13T12:34:56.789Z",
-        "onEmergencyEvent": true,
-        "naviPathId": 722,
-        "emergencyEventId": 699
-    }
+  "requestType": "UPDATE",
+  "data": {
+    "longitude": 127.118621,
+    "latitude": 37.379899,
+    "isUsingNavi": true,
+    "meterPerSec": 15.6,
+    "direction": 1.3,
+    "timestamp": "2024-01-13T12:34:56.789Z",
+    "onEmergencyEvent": true,
+    "naviPathId": 722,
+    "emergencyEventId": 699
+  }
 }
 ```
 
@@ -548,7 +548,7 @@ POST https://ajou-epas.xyz:7001/api/emergency/event/end
 
 ```json
 {
-    "emergencyEventId": 699
+  "emergencyEventId": 699
 }
 ```
 
@@ -558,9 +558,9 @@ emergencyEventId는 응급 상황 등록에서 받은 emergencyEventId입니다.
 
 ```json
 {
-    "httpStatus": "OK",
-    "code": 200,
-    "data": "Event Ended Successfully"
+  "httpStatus": "OK",
+  "code": 200,
+  "data": "Event Ended Successfully"
 }
 ```
 
