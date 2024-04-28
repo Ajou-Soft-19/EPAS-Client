@@ -130,7 +130,7 @@ If map matching is successful, the confidence value is returned with a non-null 
 
 When an emergency vehicle is approaching and there is a high possibility of encountering an emergency vehicle, the server sends the following message.
 
-```json
+```javascript
 {
   "code": 200,
   "messageType": "ALERT",
@@ -205,7 +205,7 @@ For emergency vehicle applications, an Access Token is required to access the se
 
 **Access Token Issuance Address**
 
-```json
+```http
 POST https://ajou-epas.xyz:7000/auth/token
 ```
 
@@ -240,7 +240,7 @@ Before the Access Token expires, you can renew the Access Token by sending the f
 
 **Access Token Renewal Address**
 
-```
+```http
 POST https://ajou-epas.xyz:7000/api/account/refresh
 ```
 
@@ -353,7 +353,7 @@ The emergency vehicle driver can update the location information after successfu
 }
 ```
 
-vehicleId is the ID of the emergency vehicle registered with the EPAS server. `longitude` and `latitude` represent the location information of the emergency vehicle driver, `isUsingNavi` indicates whether the emergency vehicle driver is using navigation. `meterPerSec` represents the speed of the emergency vehicle driver, and `direction` represents the direction of movement of the emergency vehicle driver. `timestamp` indicates the time the message was sent. `onEmergencyEvent` indicates whether the emergency vehicle driver is in an emergency situation. `naviPathId` is the navigation path ID of the emergency vehicle driver. `emergencyEventId` is the ID of the emergency situation in which the emergency vehicle driver is participating.
+`longitude` and `latitude` represent the location information of the emergency vehicle driver, `isUsingNavi` indicates whether the emergency vehicle driver is using navigation. `meterPerSec` represents the speed of the emergency vehicle driver, and `direction` represents the direction of movement of the emergency vehicle driver. `timestamp` indicates the time the message was sent. `onEmergencyEvent` indicates whether the emergency vehicle driver is in an emergency situation. `naviPathId` is the navigation path ID of the emergency vehicle driver. `emergencyEventId` is the ID of the emergency situation in which the emergency vehicle driver is participating.
 
 If the emergency vehicle driver is in an emergency situation, set `onEmergencyEvent` to true and set `emergencyEventId`. In this case, the server sends the location information of the emergency vehicle driver in an emergency situation to other users nearby.
 
