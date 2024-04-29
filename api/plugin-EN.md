@@ -1,14 +1,13 @@
 # EPAS API DOCUMENTATION
 
 - [EPAS API Documentation](#epas-api-documentation)
-  - [Introduction](#introduction)
-  - [EPAS API](#epas-api)
+  - [Ordinary User Application API](#ordinary-user-application-api)
     - [1. EPAS API](#1-epas-api)
     - [2. EPAS Server Connection](#2-epas-server-connection)
     - [3. Update Location on EPAS Server](#3-update-location-on-epas-server)
     - [4. Receiving Emergency Vehicle Information from the EPAS Server](#4-receiving-emergency-vehicle-information-from-the-epas-server)
     - [5. Disconnecting from the EPAS Server](#5-disconnecting-from-the-epas-server)
-  - [Emergency Vehicle Driver Application](#emergency-vehicle-driver-application)
+  - [Emergency Vehicle Driver Application API](#emergency-vehicle-driver-application)
     - [1. Sign Up and Log In](#1-sign-up-and-log-in)
     - [2. Access Token Issuance and Rotation](#2-access-token-issuance-and-rotation)
     - [3. EPAS Socket Server Connection](#3-epas-socket-server-connection)
