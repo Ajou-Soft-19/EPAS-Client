@@ -5,6 +5,8 @@
 이 리포지토리는 임베디드 시스템을 위한 EPAS 클라이언트 시스템을 구현한 코드입니다. EPAS는 처음에는 네비게이션에 내장하기 위한 플러그인을 목표로 개발되었으나, 네비게이션을 사용하지 않는(또는 사용하기 힘든) 사용자들을 위해 별도의 임베디드 장치로도 구현되었습니다.
 EPAS 클라이언트 디바이스는 큰 컴퓨팅 파워가 필요하지 않으며, GPS와 네트워크 통신 기능만 있으면 됩니다. 따라서 아두이노와 같은 저성능 싱글 쓰레드 임베디드 시스템에서도 충분히 동작 가능합니다. 이를 통해 기존의 차량들은 값싼 비용으로 EPAS 시스템을 추가할 수 있고, 스마트폰이나 네비게이션 시스템이 차량에 내장된 경우에는 별도의 하드웨어 추가 없이 소프트웨어 업데이트만으로 EPAS 시스템을 사용할 수 있습니다.
 
+소스코드는 이 링크에서 확인할 수 있습니다: [EPAS-Embeded-Client](https://github.com/Ajou-Soft-19/EPAS-Client/blob/main/embedded/gsc_node_mcu.ino)
+
 |                                                EPAS 회로 구성                                            |             EPAS Client Divice Prototype               |
 | :------------------------------------------------------------------------------------------------: | :----------------------------------------------: |
 | <img src="https://github.com/Ajou-Soft-19/EPAS-Embeded-Client/assets/32717522/db2253ca-8453-4697-8732-e4e98be4027a" alt="EPAS" style="display: block; margin-left: auto; margin-right: auto;" /> | <img src="https://github.com/Ajou-Soft-19/EPAS-Embeded-Client/assets/32717522/06179948-e7e7-4f62-894e-7a36c9a6e1fe" alt="Additional Information" style="display: block; margin-left: auto; margin-right: auto;" /> |
