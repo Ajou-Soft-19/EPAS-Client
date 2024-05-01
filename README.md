@@ -253,7 +253,7 @@ Emergency vehicle drivers can use the EPAS application to use the emergency vehi
 
 ### 1. Sign Up and Log In
 
-To use the emergency vehicle notification system of EPAS, you must sign up as an emergency vehicle driver. After signing up through the EPAS application and sending a request for emergency vehicle driver authorization, the EPAS administrator will grant the authorization. For more information, please refer to the [EPAS application]().
+To use the emergency vehicle notification system of EPAS, you must sign up as an emergency vehicle driver. After signing up through the EPAS application and sending a request for emergency vehicle driver authorization, the EPAS administrator will grant the authorization. For more information, please refer to the [EPAS application](https://github.com/Ajou-Soft-19/service-app).
 
 ### 2. Access Token Issuance and Rotation
 
