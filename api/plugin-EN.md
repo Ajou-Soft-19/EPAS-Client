@@ -1,7 +1,7 @@
 # EPAS API DOCUMENTATION
 
 - [EPAS API Documentation](#epas-api-documentation)
-  - [Ordinary User Application API](#ordinary-user-application-api)
+  - [General User Application API](#general-user-application-api)
     - [1. EPAS API](#1-epas-api)
     - [2. EPAS Server Connection](#2-epas-server-connection)
     - [3. Update Location on EPAS Server](#3-update-location-on-epas-server)
@@ -15,7 +15,7 @@
     - [5. Registering and Updating Emergency Situations on the EPAS Server](#5-registering-and-updating-emergency-situations-on-the-epas-server)
     - [6. Ending an Emergency Situation](#6-ending-an-emergency-situation)
 
-## Ordinary User Application API
+## General User Application API
 
 ### 1. EPAS API
 
