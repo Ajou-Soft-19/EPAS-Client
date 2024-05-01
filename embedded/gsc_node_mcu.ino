@@ -234,7 +234,7 @@ void handleAlert(const JsonObject &data)
   Serial.print("[MSG] Current Longitude: ");
   Serial.println(currentLongitude, 6);
 
-  double relativeBearing = calculateBearing(latitude, longitude, currentLatitude, currentLongitude, course);
+  double relativeBearing = calculateBearing(currentLatitude, currentLongitude, latitude, longitude, course);
   Serial.print("[MSG] Relative Bearing to Emergency Vehicle: ");
   Serial.println(relativeBearing, 2);
 
